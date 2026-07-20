@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>結婚式の招待状 — 篠田北斗 & 服部可奈子</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="invite-bg">
+    <section class="card" role="main">
+      <header class="hero">
+        <p class="subtitle">結婚のご報告とご招待</p>
+        <h1 class="names-hero"><span class="groom">篠田 北斗</span><span class="amp">&</span><span class="bride">服部 可奈子</span></h1>
+        <p class="date">2026年12月12日（土）</p>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div class="count-item"><span class="num" id="days">0</span><span class="label">日</span></div>
+          <div class="count-item"><span class="num" id="hours">00</span><span class="label">時間</span></div>
+          <div class="count-item"><span class="num" id="minutes">00</span><span class="label">分</span></div>
+          <div class="count-item"><span class="num" id="seconds">00</span><span class="label">秒</span></div>
+        </div>
+      </header>
+
+      <div class="couple">
+        <figure class="photo"><img src="assets/shinoda.jpeg" alt="新郎 篠田 北斗"></figure>
+        <figure class="photo"><img src="assets/hattori.jpeg" alt="新婦 服部 可奈子"></figure>
+      </div>
+
+      <p class="venue">会場：追ってご案内いたします</p>
+
+      <div class="message">
+        謹んでご案内申し上げます。
+        日頃お世話になっている皆様と大切な時間を過ごせれば幸いです。ご都合がよろしければご出席ください。
+      </div>
+
+      <section class="detail-block">
+        <h2>ご案内</h2>
+        <p>温かいご支援と祝福を賜りますよう、心よりお願い申し上げます。<br>皆さまにお集まりいただけますことを、私たちは何よりうれしく思います。</p>
+      </section>
+
+      <section class="detail-block">
+        <h2>お知らせ</h2>
+        <p>当日はゆったりとお過ごしいただけるよう、落ち着いた雰囲気のなかでおもてなしをいたします。<br>ご都合が合えば、ぜひお祝いの言葉をお寄せください。</p>
+      </section>
+
+      <div class="actions">
+        <a class="rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ51P2AvlXypV-cBCEhrEJodcAzwF3tha8UWz2_UPjUZ2n6Q/viewform?pli=1" target="_blank" rel="noopener">出欠のご連絡</a>
+        <a class="print" href="#" onclick="window.print();return false;">印刷</a>
+      </div>
+
+      <footer class="footer">Dress code: セミフォーマル</footer>
+    </section>
+  </main>
+
+  <!-- Bottom auto-scrolling photo slider -->
+  <aside class="bottom-slider" aria-hidden="false">
+    <div class="slides" id="slides">
+      <!-- original set -->
+      <div class="slide"><img src="assets/shinoda.jpeg" alt="篠田 北斗"></div>
+      <div class="slide"><img src="assets/hattori.jpeg" alt="服部 可奈子"></div>
+      <div class="slide"><img src="assets/IMG_8811.JPG" alt="写真"></div>
+      <div class="slide"><img src="assets/IMG_8812.JPG" alt="写真"></div>
+      <div class="slide"><img src="assets/IMG_8813.JPG" alt="写真"></div>
+      <!-- duplicate for seamless loop -->
+      <div class="slide"><img src="assets/shinoda.jpeg" alt="篠田 北斗"></div>
+      <div class="slide"><img src="assets/hattori.jpeg" alt="服部 可奈子"></div>
+      <div class="slide"><img src="assets/IMG_8811.JPG" alt="写真"></div>
+      <div class="slide"><img src="assets/IMG_8812.JPG" alt="写真"></div>
+      <div class="slide"><img src="assets/IMG_8813.JPG" alt="写真"></div>
+    </div>
+  </aside>
+
+  <script>
+    // Countdown to 2026-12-12 (local time, midnight)
+    (function(){
+      const target = new Date('2026-12-12T00:00:00');
+      const $d = document.getElementById('days');
+      const $h = document.getElementById('hours');
+      const $m = document.getElementById('minutes');
+      const $s = document.getElementById('seconds');
+
+      function pad(n){return String(n).padStart(2,'0')}
+
+      function tick(){
+        const now = new Date();
+        let diff = Math.max(0, target - now);
+        const days = Math.floor(diff / (1000*60*60*24));
+        diff -= days * (1000*60*60*24);
+        const hours = Math.floor(diff / (1000*60*60));
+        diff -= hours * (1000*60*60);
+        const minutes = Math.floor(diff / (1000*60));
+        diff -= minutes * (1000*60);
+        const seconds = Math.floor(diff / 1000);
+
+        if($d) $d.textContent = days;
+        if($h) $h.textContent = pad(hours);
+        if($m) $m.textContent = pad(minutes);
+        if($s) $s.textContent = pad(seconds);
+
+        if(target - now <= 0){
+          // When reached, stop updating
+          clearInterval(timer);
+        }
+      }
+
+      tick();
+      const timer = setInterval(tick,1000);
+    })();
+  </script>
+</body>
+</html>
