@@ -67,15 +67,23 @@ body{
 }
 .names-hero .groom, .names-hero .bride{display:inline-block}
 .names-hero .amp{margin:0 12px;color:var(--accent);font-weight:700}
+.roman-name{
+  margin:0 0 10px;
+  color:var(--muted);
+  font-size:17px;
+  letter-spacing:0.08em;
+  font-family:'Noto Sans JP', system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial;
+}
 .date{
   margin:6px 0 12px 0;
   color:var(--muted);
 }
 .photo-showcase{margin:16px 0 24px}
 .showcase-frame{overflow:hidden;border-radius:24px;padding:8px;background:linear-gradient(135deg, rgba(255,250,245,0.95), rgba(247,236,221,0.95));box-shadow:0 18px 36px rgba(20,20,30,0.12)}
-.showcase-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px, 1fr);gap:12px;animation:showcase-scroll 24s linear infinite}
-.showcase-rail img{width:100%;height:280px;object-fit:cover;border-radius:16px;display:block;box-shadow:0 8px 20px rgba(20,20,30,0.12)}
-@keyframes showcase-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.showcase-rail{display:flex;gap:12px;width:max-content;transform:translateX(0);will-change:transform}
+.showcase-rail img{flex:0 0 260px;width:260px;height:280px;object-fit:cover;border-radius:16px;display:block;box-shadow:0 8px 20px rgba(20,20,30,0.12);cursor:pointer}
+.showcase-hint{margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+
 .venue{color:#7d675a;margin:10px 0}
 .message{margin:24px auto 18px;color:var(--ink);max-width:68ch;line-height:2;font-size:16px;font-weight:500;letter-spacing:0.01em}
 .profile-section{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:18px;margin:24px auto 0;max-width:760px;align-items:start}
@@ -87,13 +95,15 @@ body{
 .profile-photo{width:220px;height:260px;flex:0 0 220px;object-fit:cover;object-position:center;background:#f8efe7;border-radius:14px;display:block;padding:6px;box-sizing:border-box}
 .groom-photo{object-position:center 32%}
 .profile-text{flex:1;min-width:0}
-.profile-card h3{margin:0 0 10px;font-size:24px;color:var(--accent);font-family:'Great Vibes', cursive;}
+.profile-card h3{margin:0 0 10px;font-size:24px;color:var(--accent);font-family:'Great Vibes', cursive;display:flex;flex-wrap:wrap;align-items:center;gap:0.8rem;}
+.profile-card h3 .roman-name{margin:0;font-size:16px;color:var(--muted);font-family:'Noto Sans JP', system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial;letter-spacing:0.08em;}
 .profile-card p{margin:0;line-height:1.8;color:var(--muted);font-size:15px;max-width:58ch;word-break:normal;overflow-wrap:break-word}
 .detail-block{position:relative;margin:40px auto 0;padding:32px 28px 24px;max-width:680px;border:1px solid rgba(184,143,90,0.18);border-radius:18px;background:linear-gradient(135deg, rgba(255,250,245,0.96), rgba(251,241,231,0.92));box-shadow:0 10px 24px rgba(30,20,10,0.06)}
 .section-label{position:absolute;top:-28px;left:24px;font-family:'Great Vibes', cursive;font-size:38px;color:var(--accent);line-height:1;letter-spacing:0;text-transform:none;background:rgba(247,239,232,0.96);padding:0 18px;z-index:1;border-radius:999px;}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;white-space:nowrap}
-.detail-block h2{display:none}
 .detail-block p{margin:0;line-height:2;color:var(--muted);font-size:15px}
+.venue-name{margin:0.35em 0 0.35em;color:var(--ink);font-size:70px;font-weight:700;letter-spacing:0.06em;font-family:'Playfair Display', serif;line-height:1.05;}
+.venue-meta{margin-bottom:14px;color:var(--muted);font-size:14px;line-height:1.8;}
 .venue-map{margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid rgba(184,143,90,0.18)}
 .venue-map iframe{width:100%;height:280px;border:0;display:block}
 .venue-link{margin-top:12px}
