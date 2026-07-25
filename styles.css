@@ -109,6 +109,9 @@ body{
 .venue-link{margin-top:12px}
 .venue-link a{color:var(--accent);text-decoration:none;font-weight:600}
 .venue-link a:hover{text-decoration:underline}
+.contact-group{margin-top:18px;padding-top:14px;border-top:1px solid rgba(184,143,90,0.16)}
+.contact-group:first-of-type{margin-top:8px;padding-top:0;border-top:0}
+.contact-subheading{margin:0 0 8px;font-size:20px;color:var(--accent);font-family:'Great Vibes', cursive}
 .actions{display:flex;gap:12px;justify-content:center;margin-top:24px}
 .rsvp{padding:12px 20px;border-radius:8px;text-decoration:none;color:white;background:linear-gradient(135deg,var(--accent),#e39b5b);box-shadow:0 8px 18px rgba(192,122,63,0.22)}
 .print{padding:10px 18px;border-radius:8px;text-decoration:none;color:var(--accent);background:transparent;border:1px solid rgba(150,120,90,0.18)}
