@@ -91,13 +91,14 @@ body{
 .intro-text p{margin:0 0 8px;line-height:1.9;color:var(--muted);font-size:15px;max-width:64ch;word-break:normal;overflow-wrap:break-word}
 .intro-text p:last-child{margin-bottom:0}
 .profile-heading{grid-column:1 / -1;margin:0 0 12px;font-size:38px;color:var(--accent);letter-spacing:0;text-align:left;font-family:'Great Vibes', cursive;}
-.profile-card{display:flex;gap:20px;align-items:flex-start;padding:22px 24px;border:1px solid rgba(184,143,90,0.2);border-radius:18px;background:rgba(255,248,242,0.95);text-align:left}
-.profile-photo{width:220px;height:260px;flex:0 0 220px;object-fit:cover;object-position:center;background:#f8efe7;border-radius:14px;display:block;padding:6px;box-sizing:border-box}
+.profile-card{display:flex;gap:16px;align-items:center;padding:18px 20px;border:1px solid rgba(184,143,90,0.2);border-radius:18px;background:rgba(255,248,242,0.95);text-align:left}
+.profile-photo{width:180px;height:220px;flex:0 0 180px;object-fit:cover;object-position:center;background:#f8efe7;border-radius:14px;display:block;padding:6px;box-sizing:border-box}
 .groom-photo{object-position:center 32%}
 .profile-text{flex:1;min-width:0}
-.profile-card h3{margin:0 0 10px;font-size:24px;color:var(--accent);font-family:'Great Vibes', cursive;display:flex;flex-wrap:wrap;align-items:center;gap:0.8rem;}
-.profile-card h3 .roman-name{margin:0;font-size:16px;color:var(--muted);font-family:'Noto Sans JP', system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial;letter-spacing:0.08em;}
-.profile-card p{margin:0;line-height:1.8;color:var(--muted);font-size:15px;max-width:58ch;word-break:normal;overflow-wrap:break-word}
+.profile-card h3{margin:0 0 8px;font-size:20px;color:var(--accent);font-family:'Great Vibes', cursive;display:flex;flex-wrap:wrap;align-items:center;gap:0.8rem;}
+.profile-card h3 .roman-name{margin:0;font-size:15px;color:var(--muted);font-family:'Noto Sans JP', system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial;letter-spacing:0.08em;}
+.profile-card p{margin:0 0 8px;line-height:1.6;color:var(--muted);font-size:14px;max-width:58ch;word-break:normal;overflow-wrap:break-word}
+.profile-card .profile-meta{margin:0;font-size:13px;line-height:1.7}
 .detail-block{position:relative;margin:40px auto 0;padding:32px 28px 24px;max-width:680px;border:1px solid rgba(184,143,90,0.18);border-radius:18px;background:linear-gradient(135deg, rgba(255,250,245,0.96), rgba(251,241,231,0.92));box-shadow:0 10px 24px rgba(30,20,10,0.06)}
 .section-label{position:absolute;top:-28px;left:24px;font-family:'Great Vibes', cursive;font-size:38px;color:var(--accent);line-height:1;letter-spacing:0;text-transform:none;background:rgba(247,239,232,0.96);padding:0 18px;z-index:1;border-radius:999px;}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;white-space:nowrap}
