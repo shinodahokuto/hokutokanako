@@ -104,7 +104,9 @@ body{
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;white-space:nowrap}
 .detail-block p{margin:0;line-height:2;color:var(--muted);font-size:15px}
 .venue-name{margin:0.35em 0 0.35em;color:var(--ink);font-size:70px;font-weight:700;letter-spacing:0.06em;font-family:'Playfair Display', serif;line-height:1.05;}
-.venue-meta{margin-bottom:14px;color:var(--muted);font-size:14px;line-height:1.8;}
+.venue-meta{margin-bottom:14px;color:var(--muted);font-size:14px;line-height:1.8;text-align:left;}
+.venue-list{margin:0;padding-left:1.2em;list-style:disc;}
+.venue-list li{margin-bottom:0.75em;line-height:1.8;}
 .venue-map{margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid rgba(184,143,90,0.18)}
 .venue-map iframe{width:100%;height:280px;border:0;display:block}
 .venue-link{margin-top:12px}
