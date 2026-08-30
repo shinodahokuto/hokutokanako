@@ -87,8 +87,8 @@ body{
 .venue{color:#7d675a;margin:10px 0}
 .message{margin:24px auto 18px;color:var(--ink);max-width:68ch;line-height:2;font-size:16px;font-weight:500;letter-spacing:0.01em}
 .profile-section{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:18px;margin:24px auto 0;max-width:760px;align-items:start}
-.intro-text{grid-column:1 / -1;margin:0 0 8px;padding:22px 26px;border-radius:16px;background:linear-gradient(135deg, rgba(255,250,245,0.95), rgba(251,241,231,0.9));border:1px solid rgba(184,143,90,0.2);box-shadow:0 8px 20px rgba(30,20,10,0.05);text-align:right}
-.intro-text p{margin:0 0 8px;line-height:1.9;color:var(--muted);font-size:15px;max-width:44ch;word-break:normal;overflow-wrap:break-word;margin-left:auto;text-align:right}
+.intro-text{grid-column:1 / -1;margin:0 0 8px;padding:22px 26px;border-radius:16px;background:linear-gradient(135deg, rgba(255,250,245,0.95), rgba(251,241,231,0.9));border:1px solid rgba(184,143,90,0.2);box-shadow:0 8px 20px rgba(30,20,10,0.05);text-align:left}
+.intro-text p{margin:0 0 8px;line-height:1.9;color:var(--muted);font-size:15px;max-width:64ch;word-break:normal;overflow-wrap:break-word;text-align:left}
 .intro-text p:last-child{margin-bottom:0}
 .profile-heading{grid-column:1 / -1;margin:0 0 12px;font-size:38px;color:var(--accent);letter-spacing:0;text-align:left;font-family:'Great Vibes', cursive;}
 .profile-card{display:flex;gap:16px;align-items:center;padding:18px 20px;border:1px solid rgba(184,143,90,0.2);border-radius:18px;background:rgba(255,248,242,0.95);text-align:left}
@@ -110,6 +110,8 @@ body{
 .venue-list li{margin-bottom:0.75em;line-height:1.8;}
 .access-heading{margin:1em 0 0.5em 0;font-weight:700;letter-spacing:0.08em;color:var(--ink);font-size:14px;}
 .venue-map{margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid rgba(184,143,90,0.18)}
+.label-underline{display:inline-block;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;margin-right:0.4em}
+.favorites{color:var(--muted);font-size:14px}
 .venue-map iframe{width:100%;height:280px;border:0;display:block}
 .venue-link{margin-top:12px}
 .venue-link a{color:var(--accent);text-decoration:none;font-weight:600}
@@ -131,7 +133,7 @@ body{
   .profile-photo{width:100%;height:280px;flex:0 0 auto}
   .showcase-rail{grid-template-columns:repeat(5, minmax(140px, 1fr))}
   .showcase-rail img{height:220px}
-  .intro-text p{max-width:100%;margin-left:0;text-align:right}
+  .intro-text p{max-width:100%;margin-left:0;text-align:left}
 }
 
 @media print{
