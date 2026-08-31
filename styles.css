@@ -122,6 +122,7 @@ body{
 .contact-group p{margin:0 0 8px;text-align:left}
 .contact-group a{display:inline-block;text-align:left}
 .schedule-card{margin-top:24px;padding:22px 20px;border:1px solid rgba(184,143,90,0.18);border-radius:18px;background:linear-gradient(135deg, rgba(255,250,245,0.96), rgba(251,241,231,0.92));box-shadow:0 10px 24px rgba(30,20,10,0.06);text-align:left}
+.schedule-title{margin:0 0 16px;font-size:38px;color:var(--accent);letter-spacing:0;text-align:left;font-family:'Great Vibes', cursive;line-height:1.1}
 .schedule-table{display:grid;gap:10px;max-width:520px;margin:0 auto}
 .schedule-row{display:grid;grid-template-columns:110px 1fr;align-items:center;column-gap:14px;row-gap:4px;line-height:1.8;color:var(--ink);font-size:16px}
 .schedule-label{font-weight:600;color:var(--ink);letter-spacing:0.05em}
