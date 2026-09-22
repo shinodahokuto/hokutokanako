@@ -139,8 +139,7 @@ body{
 .schedule-row{display:grid;grid-template-columns:110px 1fr;align-items:center;column-gap:14px;row-gap:4px;line-height:1.8;color:var(--ink);font-size:16px}
 .schedule-label{font-weight:600;color:var(--ink);letter-spacing:0.05em}
 .schedule-value{color:var(--muted);line-height:1.6}
-.schedule-list{margin:0;padding-left:1.2em;list-style:disc}
-.schedule-list li{margin:0;line-height:1.8;color:var(--muted)}
+.schedule-note{display:inline-block;margin-top:2px;color:var(--muted);font-size:0.96em}
 .actions{display:flex;gap:12px;justify-content:center;margin-top:24px}
 .rsvp{padding:12px 20px;border-radius:8px;text-decoration:none;color:white;background:linear-gradient(135deg,var(--accent),#e39b5b);box-shadow:0 8px 18px rgba(192,122,63,0.22)}
 .print{padding:10px 18px;border-radius:8px;text-decoration:none;color:var(--accent);background:transparent;border:1px solid rgba(150,120,90,0.18)}
