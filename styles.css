@@ -112,10 +112,15 @@ body{
 .venue-list.venue-list--access{margin-top:0.85em;}
 .venue-list.venue-list--info{margin-top:1.1em;}
 .venue-list li{margin-bottom:0.75em;line-height:1.8;}
-.access-heading{margin:1em 0 0.5em 0;font-weight:700;letter-spacing:0.08em;color:var(--ink);font-size:14px;}
+.access-heading{margin:1em 0 0.5em 0;font-weight:700;letter-spacing:0.08em;color:var(--ink);font-size:15px;}
 .access-heading a,.pdf-link a{color:var(--accent);text-decoration:none;font-weight:700;}
 .access-heading a:hover,.pdf-link a:hover{text-decoration:underline;}
-.pdf-link{margin:10px 0 14px;}
+.detail-block .pdf-link{margin:10px 0 14px;font-size:13px !important;line-height:1.7;}
+.detail-block .pdf-link a{font-size:13px !important;}
+.detail-block .access-map-link,
+.detail-block .taxi-link,
+.detail-block .access-map-link a,
+.detail-block .taxi-link a{font-size:13px !important;}
 .venue-map{margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid rgba(184,143,90,0.18)}
 .label-underline{display:inline-block;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;margin-right:0.4em}
 .favorites{color:var(--muted);font-size:14px}
@@ -134,6 +139,8 @@ body{
 .schedule-row{display:grid;grid-template-columns:110px 1fr;align-items:center;column-gap:14px;row-gap:4px;line-height:1.8;color:var(--ink);font-size:16px}
 .schedule-label{font-weight:600;color:var(--ink);letter-spacing:0.05em}
 .schedule-value{color:var(--muted);line-height:1.6}
+.schedule-list{margin:0;padding-left:1.2em;list-style:disc}
+.schedule-list li{margin:0;line-height:1.8;color:var(--muted)}
 .actions{display:flex;gap:12px;justify-content:center;margin-top:24px}
 .rsvp{padding:12px 20px;border-radius:8px;text-decoration:none;color:white;background:linear-gradient(135deg,var(--accent),#e39b5b);box-shadow:0 8px 18px rgba(192,122,63,0.22)}
 .print{padding:10px 18px;border-radius:8px;text-decoration:none;color:var(--accent);background:transparent;border:1px solid rgba(150,120,90,0.18)}
